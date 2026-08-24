@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+
+# Password-manager exports and generated plaintext output
+*.json
+*.csv
+output/
+attachments/
+
+# Keep the synthetic, non-secret test fixture tracked
+!tests/fixtures/
+!tests/fixtures/*.json
+
