@@ -1,0 +1,57 @@
+{
+  "folders": [
+    {"uuid": "folder-1", "title": "Personal"}
+  ],
+  "items": [
+    {
+      "title": "Example, Login",
+      "category": "login",
+      "favorite": 1,
+      "folders": ["folder-1"],
+      "note": "Line one\nLine two",
+      "fields": [
+        {"label": "Website", "type": "url", "value": "https://example.com"},
+        {"label": "User", "type": "username", "value": "alice@example.com"},
+        {"label": "Password", "type": "password", "value": "p,a\"ss"},
+        {"label": "OTP", "type": "totp", "value": "otpauth://totp/Example?secret=TEST"},
+        {"label": "Recovery", "type": "text", "value": "code-1", "sensitive": 1}
+      ]
+    },
+    {
+      "title": "Example Card",
+      "category": "creditcard",
+      "fields": [
+        {"label": "Number", "type": "ccnumber", "value": "4111111111111111"},
+        {"label": "Expiry", "type": "month", "value": "12/30"},
+        {"label": "CVV", "type": "pin", "value": "123"},
+        {"label": "Name on card", "type": "text", "value": "Alice Example"}
+      ]
+    },
+    {
+      "title": "Identity",
+      "category": "identity",
+      "fields": [
+        {"label": "First name", "type": "text", "value": "Alice"},
+        {"label": "Birthday", "type": "date", "value": "2000-01-02"}
+      ],
+      "attachments": [
+        {"name": "../id.txt", "data": "c3ludGhldGljIHRlc3QgZGF0YQ=="}
+      ]
+    },
+    {
+      "title": "Incomplete Login",
+      "category": "login",
+      "fields": [
+        {"label": "Password", "type": "password", "value": "only-password"}
+      ]
+    },
+    {
+      "title": "Software License",
+      "category": "license",
+      "fields": [
+        {"label": "License key", "type": "password", "value": "AAAA-BBBB"}
+      ]
+    }
+  ]
+}
+
